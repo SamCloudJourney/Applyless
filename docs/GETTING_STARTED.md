@@ -5,6 +5,13 @@
 - Node.js 20+
 - PostgreSQL 15+
 
+## Environment bootstrap
+```bash
+cp .env.example .env
+nano .env # update BACKEND_API_URL and NEXT_PUBLIC_API_URL once
+```
+> The same values are consumed by both the frontend (browser + SSR) and backend Docker Compose targets, so configuring them once prevents drift.
+
 ## Backend
 ```bash
 cd backend
