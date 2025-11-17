@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  @apply bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-50 min-h-screen;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+a {
+  @apply text-brand underline-offset-2;
+}
+
+@import "@uiw/react-md-editor/dist/mdeditor.css";
